@@ -1,0 +1,7 @@
+{
+    "version": 1,
+    "selected_model_type": "ltx2_22B_distilled_gguf_q4_k_m",
+    "policy": "Wan2GP LTX-2.3 22B Distilled GGUF only; staged review for uncertainty.",
+    "updated_at": "2026-05-14T00:00:00+00:00",
+    "items": []
+}

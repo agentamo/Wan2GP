@@ -3,6 +3,7 @@
 Date: 2026-05-14
 WanGP install: `C:\Users\USER\Documents\UGC_videos\Wan2GP`
 WanGP version shown in UI: `v11.66`
+Archived UGC project location in git: `ugcvideos/`
 
 ## Hardware
 
@@ -117,14 +118,87 @@ Note: WanGP accepted the `480x832` 9:16 resolution budget, and the encoded MP4 s
 - Observed WanGP process memory after completion: about 33.18 GB working set.
 - Warning: WanGP logged `[GGUF][llama.cpp CUDA] kernels unavailable, using fallback`. This did not block generation, but may affect GGUF performance.
 
+## LTX-2.3 22B Q4_K_M Light Follow-Up
+
+Date: 2026-05-14
+
+Follow-up model:
+
+`LTX-2 2.3 Distilled 1.0 GGUF Q4_K_M Light 22B`
+
+Test queue:
+
+`C:\Users\USER\Documents\UGC_videos\Wan2GP\test_queues\ltx23_q4_ugc_smoke.zip`
+
+The first autoload attempt reached validation and queue processing, then stopped before model load because WanGP was running with `HF_HUB_OFFLINE` and the inherited `ltx2_22B_distilled` preload list expected three additional local files. These were downloaded manually:
+
+| File | Bytes |
+| --- | ---: |
+| `C:\Users\USER\Documents\UGC_videos\Wan2GP\loras\ltx2\ltx-2.3-22b-ic-lora-outpaint.safetensors` | 1,308,756,416 |
+| `C:\Users\USER\Documents\UGC_videos\Wan2GP\loras\ltx2\ltx-2.3-22b-ic-lora-hdr-0.9.safetensors` | 327,309,312 |
+| `C:\Users\USER\Documents\UGC_videos\Wan2GP\ckpts\ltx-2.3-22b-ic-lora-hdr-scene-emb.safetensors` | 12,583,096 |
+
+The second autoload/render completed successfully.
+
+- Output file: `C:\Users\USER\Documents\UGC_videos\Wan2GP\outputs\LTX23_Q4_UGC_Laptop_Test.mp4`
+- Output file size: 4,182,140 bytes
+- Video stream: H.264, 448x832, 24 fps, 241 frames, 10.041667s
+- Audio stream exists: yes
+- Audio stream: AAC, mono, 48,000 Hz, 10.026000s
+- Log line during LTX-2.3 load: `The whole model was pinned to reserved RAM: 52 large blocks spread across 12390.27 MB`
+- Log line during LTX-2.3 load: `Async loading plan for model 'transformer' : base size of 643.25 MB will be preloaded with a 269.48 MB async circular shuttle`
+- Log line during LTX-2.3 load: `Async loading plan for model 'text_embeddings_connector' : 1923.52 MB will be preloaded (base size of 1.50 MB + 50.0% of recurrent layers data) with a 384.34 MB async shuttle`
+- Observed GPU memory after completion: about 306 MiB used.
+- Observed WanGP process memory after completion: about 35.77 GiB working set.
+- Visual QA artifacts:
+  - First frame extract: `C:\Users\USER\Documents\UGC_videos\Wan2GP\outputs\tests\ltx23_q4_ugc_first_frame.jpg`
+  - Contact sheet: `C:\Users\USER\Documents\UGC_videos\Wan2GP\outputs\tests\ltx23_q4_ugc_contact_sheet.jpg`
+  - The man and product remain visible, but the contact sheet shows a literal gold-frame/border artifact after the first frame. For a quality rerun, avoid the phrase `golden frame` in the prompt and refer to it as the `reference image` or `first image` instead.
+
+## LTX-2.3 Wedding I2V Tests
+
+Date: 2026-05-14
+
+Test queue:
+
+`C:\Users\USER\Documents\UGC_videos\Wan2GP\test_queues\ltx23_q4_wedding_combo_480p_720p.zip`
+
+WanGP dry-run accepted both tasks. Because this is the distilled GGUF preset, WanGP reported locked `8` generation steps for both tasks, even though the queue carried the requested higher step values.
+
+### Wedding Spin 480p
+
+- Reference image: `C:\Users\USER\Documents\UGC_videos\Wan2GP\inputs\wedding_spin_reference_480x832.png`
+- Queue setting: `480x832`, `121` frames, CFG `1.0`, NAG scale `2.0`, NAG tau `3.5`, NAG alpha `0.5`, start image strength `0.95`
+- Output file: `C:\Users\USER\Documents\UGC_videos\Wan2GP\outputs\LTX23_Q4_Wedding_Spin_480p_Test.mp4`
+- Output file size: 3,149,360 bytes
+- Video stream: H.264, 448x832, 24 fps, 121 frames, 5.041667s
+- Audio stream: AAC, mono, 48,000 Hz, 5.034000s
+- Visual QA:
+  - First frame extract: `C:\Users\USER\Documents\UGC_videos\Wan2GP\outputs\tests\wedding_spin_480p_first_frame.jpg`
+  - Contact sheet: `C:\Users\USER\Documents\UGC_videos\Wan2GP\outputs\tests\wedding_spin_480p_contact_sheet.jpg`
+  - The spin and bouquet-toward-lens action are visible. Because the source image cropped the upper face, the model hallucinates/reconstructs the full face during motion.
+
+### Wedding Walk "I Do" 720p
+
+- Reference image: `C:\Users\USER\Documents\UGC_videos\Wan2GP\inputs\wedding_walk_reference_736x1280.png`
+- Queue setting: `736x1280`, `241` frames, CFG `1.0`, NAG scale `2.5`, NAG tau `3.5`, NAG alpha `0.5`, start image strength `0.90`
+- Output file: `C:\Users\USER\Documents\UGC_videos\Wan2GP\outputs\LTX23_Q4_Wedding_Walk_IDo_720p_10s_Test.mp4`
+- Output file size: 18,196,089 bytes
+- Video stream: H.264, 704x1280, 24 fps, 241 frames, 10.041667s
+- Audio stream: AAC, mono, 48,000 Hz, 10.026000s
+- Visual QA:
+  - First frame extract: `C:\Users\USER\Documents\UGC_videos\Wan2GP\outputs\tests\wedding_walk_ido_720p_first_frame.jpg`
+  - Contact sheet: `C:\Users\USER\Documents\UGC_videos\Wan2GP\outputs\tests\wedding_walk_ido_720p_contact_sheet.jpg`
+  - Identity, studio background, and dress detail stay consistent across the contact sheet. The arms extend gradually near the second half of the clip.
+
 ## Q6_K Recommendation
 
-Q6_K is safe to test next, cautiously, because Q4_K_M loaded, completed the 5-second generation, and produced an MP4 with audio without VRAM or RAM errors.
+Q6_K is reasonable to test next, cautiously. The original 19B Q4_K_M run completed a 5-second generation with audio, and the LTX-2.3 22B Q4_K_M Light run completed a 10-second 241-frame generation with audio without VRAM or RAM errors.
 
 Recommended next Q6_K test:
 
 - Keep the same `480x832` setting.
-- Keep the same `121` frame 5-second duration.
+- Start with `121` frames / about 5 seconds before trying another 241-frame run.
 - Keep audio enabled.
 - Download only `Distilled GGUF Q6_K`.
 - Do not download Dev, Dev NVFP4, regular Distilled, or Q8_0.

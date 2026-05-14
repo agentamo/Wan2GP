@@ -1,0 +1,111 @@
+{
+  "variant": "LTX-2 2.0 19B Distilled GGUF Q4_K_M",
+  "q4_url": "https://huggingface.co/Kijai/LTXV2_comfy/resolve/main/diffusion_models/ltx-2-19b-distilled_Q4_K_M.gguf",
+  "started_at_epoch": 1778736046.3703604,
+  "finished_at_epoch": 1778736059.7319455,
+  "elapsed_seconds": 13.361585140228271,
+  "total_expected_asset_bytes": 33339671904,
+  "newly_downloaded_bytes": 654465296,
+  "files": [
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\ltx-2-19b-distilled_Q4_K_M.gguf",
+      "bytes": 12651789536,
+      "size": "11.78 GB"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\ltx-2-spatial-upscaler-x2-1.0.safetensors",
+      "bytes": 995765578,
+      "size": "949.64 MB"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\ltx-2-temporal-upscaler-x2-1.0.safetensors",
+      "bytes": 261965800,
+      "size": "249.83 MB"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\ltx-2-19b_vae.safetensors",
+      "bytes": 2445014077,
+      "size": "2.28 GB"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\ltx-2-19b_audio_vae.safetensors",
+      "bytes": 106537820,
+      "size": "101.60 MB"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\ltx-2-19b_vocoder.safetensors",
+      "bytes": 111235510,
+      "size": "106.08 MB"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\ltx-2-19b_text_embedding_projection.safetensors",
+      "bytes": 1445096790,
+      "size": "1.35 GB"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\ltx-2-19b-distilled_embeddings_connector.safetensors",
+      "bytes": 1417919090,
+      "size": "1.32 GB"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\gemma-3-12b-it-qat-q4_0-unquantized\\added_tokens.json",
+      "bytes": 35,
+      "size": "35.00 B"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\gemma-3-12b-it-qat-q4_0-unquantized\\chat_template.json",
+      "bytes": 1615,
+      "size": "1.58 KB"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\gemma-3-12b-it-qat-q4_0-unquantized\\config_light.json",
+      "bytes": 907,
+      "size": "907.00 B"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\gemma-3-12b-it-qat-q4_0-unquantized\\generation_config.json",
+      "bytes": 173,
+      "size": "173.00 B"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\gemma-3-12b-it-qat-q4_0-unquantized\\preprocessor_config.json",
+      "bytes": 570,
+      "size": "570.00 B"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\gemma-3-12b-it-qat-q4_0-unquantized\\processor_config.json",
+      "bytes": 70,
+      "size": "70.00 B"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\gemma-3-12b-it-qat-q4_0-unquantized\\special_tokens_map.json",
+      "bytes": 662,
+      "size": "662.00 B"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\gemma-3-12b-it-qat-q4_0-unquantized\\tokenizer.json",
+      "bytes": 33384570,
+      "size": "31.84 MB"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\gemma-3-12b-it-qat-q4_0-unquantized\\tokenizer.model",
+      "bytes": 4689074,
+      "size": "4.47 MB"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\gemma-3-12b-it-qat-q4_0-unquantized\\tokenizer_config.json",
+      "bytes": 1157001,
+      "size": "1.10 MB"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\gemma-3-12b-it-qat-q4_0-unquantized\\gemma-3-12b-it-qat-q4_0-unquantized_quanto_bf16_int8.safetensors",
+      "bytes": 13210647730,
+      "size": "12.30 GB"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\loras\\ltx2\\ltx-2-19b-ic-lora-union-control-ref0.5.safetensors",
+      "bytes": 654465296,
+      "size": "624.15 MB"
+    }
+  ]
+}

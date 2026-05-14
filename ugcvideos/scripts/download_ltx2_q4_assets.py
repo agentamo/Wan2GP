@@ -6,17 +6,18 @@ import sys
 import time
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT))
+ARCHIVE_ROOT = Path(__file__).resolve().parents[1]
+WAN2GP_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(WAN2GP_ROOT))
 os.environ.setdefault("HF_HUB_DISABLE_XET", "1")
 
 from shared.utils import files_locator as fl
 from shared.utils.download import download_file, process_files_def
 
 
-CKPTS = ROOT / "ckpts"
-LORA_DIR = ROOT / "loras" / "ltx2"
-LOGS = ROOT / "logs"
+CKPTS = WAN2GP_ROOT / "ckpts"
+LORA_DIR = WAN2GP_ROOT / "loras" / "ltx2"
+LOGS = ARCHIVE_ROOT / "logs"
 
 Q4_URL = "https://huggingface.co/Kijai/LTXV2_comfy/resolve/main/diffusion_models/ltx-2-19b-distilled_Q4_K_M.gguf"
 Q4_FILENAME = "ltx-2-19b-distilled_Q4_K_M.gguf"
@@ -78,7 +79,7 @@ def ensure_download(url: str, target: Path) -> bool:
 
 
 def main() -> None:
-    os.chdir(ROOT)
+    os.chdir(WAN2GP_ROOT)
     LOGS.mkdir(parents=True, exist_ok=True)
     CKPTS.mkdir(parents=True, exist_ok=True)
     LORA_DIR.mkdir(parents=True, exist_ok=True)
@@ -86,7 +87,8 @@ def main() -> None:
 
     start = time.time()
     print("[info] LTX-2 Q4_K_M asset download starting", flush=True)
-    print(f"[info] WanGP root: {ROOT}", flush=True)
+    print(f"[info] WanGP root: {WAN2GP_ROOT}", flush=True)
+    print(f"[info] UGC archive root: {ARCHIVE_ROOT}", flush=True)
 
     expected_paths: list[Path] = [CKPTS / Q4_FILENAME]
     expected_paths += [CKPTS / name for name in DEEPBEEPMEEP_ROOT_FILES]

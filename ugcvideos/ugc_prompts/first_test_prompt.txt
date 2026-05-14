@@ -1,0 +1,10 @@
+﻿First Wan2GP test prompt
+
+Model: Wan 2.1 text to video 1.3B if available
+Frames: 49
+Steps: 20
+Resolution: default or 720p if available
+Prompt: POV smartphone camera shot, a stylish woman applying lipstick in a clean bedroom, natural morning light, realistic UGC beauty video, handheld phone camera, no mirror in the background, soft skin texture, casual influencer style
+
+Output path: none
+Status: not run. Launch is blocked because PyTorch 2.10.0+cu130 cannot initialize CUDA with the installed NVIDIA 555.97 driver.

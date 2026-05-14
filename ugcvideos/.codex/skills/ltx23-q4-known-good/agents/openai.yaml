@@ -1,0 +1,7 @@
+interface:
+  display_name: "LTX-2.3 Q4 Known Good"
+  short_description: "Reproduce and extend the successful Wan2GP LTX-2.3 Q4 laptop smoke test."
+  default_prompt: "Use $ltx23-q4-known-good to reproduce, debug, or extend the preserved LTX-2.3 Q4 10-second WanGP test."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,140 @@
+{
+  "variant": "LTX-2.3 22B Distilled 1.0 GGUF Q4_K_M Light",
+  "q4_url": "https://huggingface.co/DeepBeepMeep/LTX-2/resolve/main/ltx-2.3-22b-distilled-Q4_K_M_light.gguf",
+  "q6_downloaded": false,
+  "q6_url": null,
+  "started_at_epoch": 1778740598.288266,
+  "finished_at_epoch": 1778740947.4931,
+  "elapsed_seconds": 349.204833984375,
+  "total_expected_asset_bytes": 39240356111,
+  "newly_downloaded_bytes": 13018569672,
+  "utility_loras": {
+    "union_control_22b": {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\loras\\ltx2\\ltx-2.3-22b-ic-lora-union-control-ref0.5.safetensors",
+      "url": "https://huggingface.co/DeepBeepMeep/LTX-2/resolve/main/ltx-2.3-22b-ic-lora-union-control-ref0.5.safetensors",
+      "reason": "Wan2GP built-in LTX-2.3 distilled control LoRA for pose/depth/canny modes."
+    },
+    "detailer": {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\loras\\ltx2\\ltx-2-19b-ic-lora-detailer.safetensors",
+      "url": "https://huggingface.co/DeepBeepMeep/LTX-2/resolve/main/ltx-2-19b-ic-lora-detailer.safetensors",
+      "reason": "Wan2GP Process Full Video includes this for LTX-2.3 Distilled 1.0 detail passes."
+    },
+    "motion_track_control": {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\loras\\ltx2\\ltx-2.3-22b-ic-lora-motion-track-control-ref0.5.safetensors",
+      "url": "https://huggingface.co/Lightricks/LTX-2.3-22b-IC-LoRA-Motion-Track-Control/resolve/main/ltx-2.3-22b-ic-lora-motion-track-control-ref0.5.safetensors",
+      "reason": "Official Lightricks LTX-2.3 22B IC-LoRA for sparse trajectory motion control."
+    }
+  },
+  "files": [
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\ltx-2.3-22b-distilled-Q4_K_M_light.gguf",
+      "bytes": 12971904032,
+      "size": "12.08 GB"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\ltx-2.3-spatial-upscaler-x2-1.1.safetensors",
+      "bytes": 995743560,
+      "size": "949.62 MB"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\ltx-2.3-temporal-upscaler-x2-1.0.safetensors",
+      "bytes": 261944000,
+      "size": "249.81 MB"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\ltx-2.3-22b_vae.safetensors",
+      "bytes": 1452263226,
+      "size": "1.35 GB"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\ltx-2.3-22b_audio_vae.safetensors",
+      "bytes": 106538084,
+      "size": "101.60 MB"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\ltx-2.3-22b_vocoder.safetensors",
+      "bytes": 258347744,
+      "size": "246.38 MB"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\ltx-2.3-22b_text_embedding_projection.safetensors",
+      "bytes": 2312151888,
+      "size": "2.15 GB"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\ltx-2.3-22b_embeddings_connector.safetensors",
+      "bytes": 4032404584,
+      "size": "3.76 GB"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\gemma-3-12b-it-qat-q4_0-unquantized\\added_tokens.json",
+      "bytes": 35,
+      "size": "35.00 B"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\gemma-3-12b-it-qat-q4_0-unquantized\\chat_template.json",
+      "bytes": 1615,
+      "size": "1.58 KB"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\gemma-3-12b-it-qat-q4_0-unquantized\\config_light.json",
+      "bytes": 907,
+      "size": "907.00 B"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\gemma-3-12b-it-qat-q4_0-unquantized\\generation_config.json",
+      "bytes": 173,
+      "size": "173.00 B"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\gemma-3-12b-it-qat-q4_0-unquantized\\preprocessor_config.json",
+      "bytes": 570,
+      "size": "570.00 B"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\gemma-3-12b-it-qat-q4_0-unquantized\\processor_config.json",
+      "bytes": 70,
+      "size": "70.00 B"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\gemma-3-12b-it-qat-q4_0-unquantized\\special_tokens_map.json",
+      "bytes": 662,
+      "size": "662.00 B"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\gemma-3-12b-it-qat-q4_0-unquantized\\tokenizer.json",
+      "bytes": 33384570,
+      "size": "31.84 MB"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\gemma-3-12b-it-qat-q4_0-unquantized\\tokenizer.model",
+      "bytes": 4689074,
+      "size": "4.47 MB"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\gemma-3-12b-it-qat-q4_0-unquantized\\tokenizer_config.json",
+      "bytes": 1157001,
+      "size": "1.10 MB"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ckpts\\gemma-3-12b-it-qat-q4_0-unquantized\\gemma-3-12b-it-qat-q4_0-unquantized_quanto_bf16_int8.safetensors",
+      "bytes": 13210647730,
+      "size": "12.30 GB"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\loras\\ltx2\\ltx-2.3-22b-ic-lora-union-control-ref0.5.safetensors",
+      "bytes": 654465352,
+      "size": "624.15 MB"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\loras\\ltx2\\ltx-2-19b-ic-lora-detailer.safetensors",
+      "bytes": 2617401920,
+      "size": "2.44 GB"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\loras\\ltx2\\ltx-2.3-22b-ic-lora-motion-track-control-ref0.5.safetensors",
+      "bytes": 327309314,
+      "size": "312.15 MB"
+    }
+  ]
+}
