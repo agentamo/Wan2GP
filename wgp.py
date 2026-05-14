@@ -2689,7 +2689,7 @@ def get_default_settings(model_type):
         ui_defaults = {
             "settings_version" : settings_version,
             "prompt": get_default_prompt(i2v),
-            "resolution": "1280x720" if "720" in base_model_type else "832x480",
+            "resolution": "720x1280" if "720" in base_model_type else "480x832",
             "flow_shift": 7.0 if not "720" in base_model_type and i2v else 5.0, 
         }
 

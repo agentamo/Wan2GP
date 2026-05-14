@@ -21,7 +21,7 @@
 	"speakers_locations": "0:45 55:100",
 	"prompt_enhancer": "",
 	"custom_settings": null,
-	"resolution": "832x480",
+	"resolution": "480x832",
 	"batch_size": 1,
 	"video_length": 81,
 	"duration_seconds": 0,

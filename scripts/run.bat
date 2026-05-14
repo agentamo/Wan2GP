@@ -12,8 +12,14 @@ if not exist "envs.json" (
 echo [*] Fetching active environment...
 set "ENV_TYPE="
 set "ENV_PATH="
+set "SETUP_PYTHON=python"
 
-for /f "tokens=1,2,3 delims=|" %%A in ('python setup.py get_env_info 2^>nul') do (
+python --version >nul 2>nul
+if !errorlevel! neq 0 (
+    if exist "%USERPROFILE%\miniconda3\envs\wan2gp\python.exe" set "SETUP_PYTHON=%USERPROFILE%\miniconda3\envs\wan2gp\python.exe"
+)
+
+for /f "tokens=1,2,3 delims=|" %%A in ('"!SETUP_PYTHON!" setup.py get_env_info 2^>nul') do (
     if "%%A"=="ENV_INFO" (
         set "ENV_TYPE=%%B"
         set "ENV_PATH=%%C"
