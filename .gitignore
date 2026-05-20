@@ -1,8 +1,8 @@
 .*
 *.py[cod]
-# *.jpg
+*.jpg
 *.jpeg
-# *.png
+*.png
 *.gif
 *.bmp
 *.mp4
@@ -19,6 +19,7 @@
 #*.json
 # *.txt
 *.backup
+*.pid
 *.pkl
 *.html
 *.pdf
@@ -40,9 +41,6 @@ gradio_outputs/
 ckpts/
 loras/
 loras_i2v/
-
-/settings/
-
-wgp_config.json
+logs/
 plugins_local.json
 loras_url_cache.json

@@ -1,0 +1,9 @@
+{
+    "active": "wan2gp",
+    "envs": {
+        "wan2gp": {
+            "type": "conda",
+            "path": "C:\\Users\\USER\\miniconda3\\envs\\wan2gp"
+        }
+    }
+}

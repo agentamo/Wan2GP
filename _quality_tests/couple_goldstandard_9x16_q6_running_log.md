@@ -1,0 +1,33 @@
+# Couple Gold Standard 9x16 Q6 Running Log
+
+- `2026-05-15 16:56:27` Prepared temporary WanGP config: fit_canvas=2, last_resolution_choice=512x896, video_output_codec=libx264_10.
+- `2026-05-15 16:56:27` Baseline reference: `C:\Users\USER\Documents\UGC_videos\Wan2GP\_quality_tests\couple_v3_t21_q6_crop9x16_30fps_crop_baseline_lock.mp4`.
+- `2026-05-15 16:56:27` Kling gold-standard reference: `C:\Users\USER\Documents\UGC_videos\Wan2GP\_quality_tests\kling_20260514_Two_shot_v_3722_0.mp4`.
+- `2026-05-15 16:56:27` Research note: LTX 2.3 distilled settings are locked to 8 steps and CFG/guidance 1.0; res2s/HQ sampler is not available for distilled in this WanGP build.
+- `2026-05-15 16:56:27` Research note: official LTX 2.3 LipDub IC-LoRA is gated and requires a specific video+audio control pipeline, so it is not mixed into the Q6 baseline run.
+- `2026-05-15 16:56:27` Wrote settings for test 31: `couple_v4_t31_q6_gold9x16_native30_gold_prompt_lock_seed_240501.json`.
+- `2026-05-15 16:56:27` Wrote settings for test 32: `couple_v4_t32_q6_gold9x16_native30_strong_ref_lock_seed_240501.json`.
+- `2026-05-15 16:56:27` Wrote settings for test 33: `couple_v4_t33_q6_gold9x16_native30_more_human_motion_seed_240501.json`.
+- `2026-05-15 16:56:27` Wrote settings for test 34: `couple_v4_t34_q6_gold9x16_native30_lipsync_timing_clear_seed_240504.json`.
+- `2026-05-15 16:56:27` Wrote settings for test 35: `couple_v4_t35_q6_gold9x16_native30_min_hand_travel_seed_240503.json`.
+- `2026-05-15 16:56:27` Wrote settings for test 36: `couple_v4_t36_q6_gold9x16_rife30_15to30_gold_prompt_seed_240501.json`.
+- `2026-05-15 16:56:27` Wrote settings for test 37: `couple_v4_t37_q6_gold9x16_rife30_15to30_lipsync_clear_seed_240504.json`.
+- `2026-05-15 16:56:27` Wrote settings for test 38: `couple_v4_t38_q6_gold9x16_rife30_15to30_strong_ref_lock_seed_240501.json`.
+- `2026-05-15 16:56:27` Wrote settings for test 39: `couple_v4_t39_q6_gold9x16_native30_camera_micro_static_seed_240505.json`.
+- `2026-05-15 16:56:27` Wrote settings for test 40: `couple_v4_t40_q6_gold9x16_vbvr96000_guarded_short_memory_probe_seed_240501.json`.
+- `2026-05-15 16:57:14` Starting test 31: `couple_v4_t31_q6_gold9x16_native30_gold_prompt_lock_seed_240501`.
+- `2026-05-15 17:07:31` Finished test 31: success=True, elapsed=617.1s, actual_resolution=512x896, fps=30.0, bitrate_mbps=27.94, output=`C:\Users\USER\Documents\UGC_videos\Wan2GP\_quality_tests\couple_v4_t31_q6_gold9x16_native30_gold_prompt_loc.mp4`.
+- `2026-05-15 17:07:31` Starting test 32: `couple_v4_t32_q6_gold9x16_native30_strong_ref_lock_seed_240501`.
+- `2026-05-15 17:17:13` Finished test 32: success=True, elapsed=581.9s, actual_resolution=512x896, fps=30.0, bitrate_mbps=27.61, output=`C:\Users\USER\Documents\UGC_videos\Wan2GP\_quality_tests\couple_v4_t32_q6_gold9x16_native30_strong_ref_lock.mp4`.
+- `2026-05-15 17:17:13` Starting test 33: `couple_v4_t33_q6_gold9x16_native30_more_human_motion_seed_240501`.
+- `2026-05-15 17:26:57` Finished test 33: success=True, elapsed=583.7s, actual_resolution=512x896, fps=30.0, bitrate_mbps=27.75, output=`C:\Users\USER\Documents\UGC_videos\Wan2GP\_quality_tests\couple_v4_t33_q6_gold9x16_native30_more_human_moti.mp4`.
+- `2026-05-15 17:26:57` Starting test 34: `couple_v4_t34_q6_gold9x16_native30_lipsync_timing_clear_seed_240504`.
+- `2026-05-15 17:36:41` Finished test 34: success=True, elapsed=584.1s, actual_resolution=512x896, fps=30.0, bitrate_mbps=28.5, output=`C:\Users\USER\Documents\UGC_videos\Wan2GP\_quality_tests\couple_v4_t34_q6_gold9x16_native30_lipsync_timing_.mp4`.
+- `2026-05-15 17:36:41` Starting test 35: `couple_v4_t35_q6_gold9x16_native30_min_hand_travel_seed_240503`.
+- `2026-05-15 17:46:31` Finished test 35: success=True, elapsed=589.8s, actual_resolution=512x896, fps=30.0, bitrate_mbps=23.04, output=`C:\Users\USER\Documents\UGC_videos\Wan2GP\_quality_tests\couple_v4_t35_q6_gold9x16_native30_min_hand_travel.mp4`.
+- `2026-05-15 17:46:31` Starting test 36: `couple_v4_t36_q6_gold9x16_rife30_15to30_gold_prompt_seed_240501`.
+- `2026-05-15 18:55:19` Finished test 36: success=True, elapsed=4128.4s, actual_resolution=512x896, fps=30.0, bitrate_mbps=24.57, output=`C:\Users\USER\Documents\UGC_videos\Wan2GP\_quality_tests\couple_v4_t36_q6_gold9x16_rife30_15to30_gold_promp.mp4`.
+- `2026-05-15 18:55:19` Starting test 37: `couple_v4_t37_q6_gold9x16_rife30_15to30_lipsync_clear_seed_240504`.
+- $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') USER STOP: halted immediately because generated versions are producing black screens. Do not use t31-t36/t41+ as accepted baselines until black-screen cause is fixed.
+- $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') Transcoded v4 outputs to Windows Media Player compatible H.264/AAC _wmp.mp4 copies.
+- $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') Added maximum Windows compatibility AVC Baseline/AAC _wincompat.mp4 copies for v4 outputs.

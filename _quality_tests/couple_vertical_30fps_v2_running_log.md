@@ -1,0 +1,34 @@
+# Couple Vertical 30 FPS V2 Running Log
+
+- `2026-05-15 11:21:45` Started Q6 vertical continuation batch from couple_t09 settings.
+- `2026-05-15 11:21:45` Wrote settings for test 11: `couple_v2_t11_q6_vertical30_baseline_vertical_lock_seed_240501.json`.
+- `2026-05-15 11:21:45` Wrote settings for test 12: `couple_v2_t12_q6_vertical30_stronger_grip_language_seed_240501.json`.
+- `2026-05-15 11:21:46` Wrote settings for test 13: `couple_v2_t13_q6_vertical30_more_static_cans_seed_240501.json`.
+- `2026-05-15 11:21:46` Wrote settings for test 14: `couple_v2_t14_q6_vertical30_more_motion_but_locked_seed_240501.json`.
+- `2026-05-15 11:21:46` Wrote settings for test 15: `couple_v2_t15_q6_vertical30_face_and_prop_lock_seed_240501.json`.
+- `2026-05-15 11:21:46` Wrote settings for test 16: `couple_v2_t16_q6_vertical30_composition_full_body_seed_240501.json`.
+- `2026-05-15 11:21:46` Wrote settings for test 17: `couple_v2_t17_q6_vertical30_hands_visible_seed_240502.json`.
+- `2026-05-15 11:21:46` Wrote settings for test 18: `couple_v2_t18_q6_vertical30_less_hand_motion_seed_240503.json`.
+- `2026-05-15 11:21:46` Wrote settings for test 19: `couple_v2_t19_q6_vertical30_kiss_timing_clear_seed_240504.json`.
+- `2026-05-15 11:21:46` Wrote settings for test 20: `couple_v2_t20_q6_vertical30_product_commercial_clean_seed_240505.json`.
+- `2026-05-15 11:22:01` Starting test 11: `couple_v2_t11_q6_vertical30_baseline_vertical_lock_seed_240501`.
+- `2026-05-15 11:30:30` Finished test 11: success=True, elapsed=509.9s, output=`C:\Users\USER\Documents\UGC_videos\Wan2GP\_quality_tests\couple_v2_t11_q6_vertical30_baseline_vertical_lock.mp4`.
+- `2026-05-15 11:30:30` Starting test 12: `couple_v2_t12_q6_vertical30_stronger_grip_language_seed_240501`.
+- `2026-05-15 11:38:03` Finished test 12: success=True, elapsed=452.3s, output=`C:\Users\USER\Documents\UGC_videos\Wan2GP\_quality_tests\couple_v2_t12_q6_vertical30_stronger_grip_language.mp4`.
+- `2026-05-15 11:38:03` Starting test 13: `couple_v2_t13_q6_vertical30_more_static_cans_seed_240501`.
+- `2026-05-15 11:45:37` Finished test 13: success=True, elapsed=454.5s, output=`C:\Users\USER\Documents\UGC_videos\Wan2GP\_quality_tests\couple_v2_t13_q6_vertical30_more_static_cans_seed_.mp4`.
+- `2026-05-15 11:45:37` Starting test 14: `couple_v2_t14_q6_vertical30_more_motion_but_locked_seed_240501`.
+- `2026-05-15 11:53:10` Finished test 14: success=True, elapsed=453.1s, output=`C:\Users\USER\Documents\UGC_videos\Wan2GP\_quality_tests\couple_v2_t14_q6_vertical30_more_motion_but_locked.mp4`.
+- `2026-05-15 11:53:10` Starting test 15: `couple_v2_t15_q6_vertical30_face_and_prop_lock_seed_240501`.
+- `2026-05-15 12:00:43` Finished test 15: success=True, elapsed=452.5s, output=`C:\Users\USER\Documents\UGC_videos\Wan2GP\_quality_tests\couple_v2_t15_q6_vertical30_face_and_prop_lock_see.mp4`.
+- `2026-05-15 12:00:43` Starting test 16: `couple_v2_t16_q6_vertical30_composition_full_body_seed_240501`.
+- `2026-05-15 12:08:15` Finished test 16: success=True, elapsed=452.3s, output=`C:\Users\USER\Documents\UGC_videos\Wan2GP\_quality_tests\couple_v2_t16_q6_vertical30_composition_full_body_.mp4`.
+- `2026-05-15 12:08:15` Starting test 17: `couple_v2_t17_q6_vertical30_hands_visible_seed_240502`.
+- `2026-05-15 12:15:50` Finished test 17: success=True, elapsed=455.0s, output=`C:\Users\USER\Documents\UGC_videos\Wan2GP\_quality_tests\couple_v2_t17_q6_vertical30_hands_visible_seed_240.mp4`.
+- `2026-05-15 12:15:50` Starting test 18: `couple_v2_t18_q6_vertical30_less_hand_motion_seed_240503`.
+- `2026-05-15 15:44:49` Finished test 18: success=True, elapsed=12538.2s, output=`C:\Users\USER\Documents\UGC_videos\Wan2GP\_quality_tests\couple_v2_t18_q6_vertical30_less_hand_motion_seed_.mp4`.
+- `2026-05-15 15:44:49` Starting test 19: `couple_v2_t19_q6_vertical30_kiss_timing_clear_seed_240504`.
+- `2026-05-15 15:52:47` Finished test 19: success=True, elapsed=478.1s, output=`C:\Users\USER\Documents\UGC_videos\Wan2GP\_quality_tests\couple_v2_t19_q6_vertical30_kiss_timing_clear_seed.mp4`.
+- `2026-05-15 15:52:47` Starting test 20: `couple_v2_t20_q6_vertical30_product_commercial_clean_seed_240505`.
+- `2026-05-15 16:01:04` Finished test 20: success=True, elapsed=497.4s, output=`C:\Users\USER\Documents\UGC_videos\Wan2GP\_quality_tests\couple_v2_t20_q6_vertical30_product_commercial_cle.mp4`.
+- `2026-05-15 16:01:04` Completed Q6 vertical continuation batch.

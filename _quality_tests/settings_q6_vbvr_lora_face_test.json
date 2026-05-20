@@ -1,0 +1,43 @@
+{
+  "settings_version": 2.58,
+  "model_type": "ltx2_22B_distilled_gguf_q6_k_quantstack",
+  "base_model_type": "ltx2_22B",
+  "prompt": "Vertical smartphone UGC selfie video, photorealistic, natural indoor soft window light, same woman from the reference image, consistent face across every frame, same identity, same facial structure, same eye shape, same nose, same lips, same skin tone, same hairstyle, same makeup, stable face, no identity drift. She faces the smartphone camera and applies lipstick carefully while looking into the camera. Natural hand movement, realistic body motion, subtle head movement, authentic beauty influencer style, clear face, clear product, shallow background, realistic skin texture, no glamour lighting, no cinematic camera, no mirror in the background, no face morphing, no changing person, no changing hairstyle, no distorted hands, no extra fingers, no duplicated face.",
+  "negative_prompt": "face morphing, identity drift, changing face, different person, changing hairstyle, distorted eyes, uneven eyes, melted face, waxy skin, plastic skin, extra fingers, distorted hands, broken mouth, duplicated face, blurry face, over sharpened skin, heavy cinematic lighting, mirror background, product disappearing",
+  "resolution": "480x832",
+  "image_prompt_type": "S",
+  "image_start": [
+    "C:\\Users\\USER\\Documents\\UGC_videos\\Wan2GP\\ugcvideos\\inputs\\wedding_walk_reference_736x1280.png"
+  ],
+  "image_end": [],
+  "video_length": 121,
+  "duration_seconds": 0.0,
+  "force_fps": "",
+  "num_inference_steps": 8,
+  "guidance_scale": 1.0,
+  "guidance2_scale": 1.0,
+  "guidance3_scale": 1.0,
+  "audio_guidance_scale": 1.0,
+  "audio_scale": 1.0,
+  "flow_shift": 5.0,
+  "sliding_window_size": 481,
+  "sliding_window_overlap": 17,
+  "denoising_strength": 1.0,
+  "masking_strength": 0,
+  "input_video_strength": 1.0,
+  "audio_prompt_type": "",
+  "video_prompt_type": "",
+  "guidance_phases": 2,
+  "seed": 230514,
+  "batch_size": 1,
+  "repeat_generation": 1,
+  "activated_loras": [
+    "https://huggingface.co/DeepBeepMeep/LTX-2/resolve/main/loras/Ltx2.3-Licon-VBVR-I2V-96000-R32.safetensors"
+  ],
+  "loras_multipliers": "",
+  "MMAudio_setting": 0,
+  "temporal_upsampling": "",
+  "spatial_upsampling": "",
+  "override_profile": -1,
+  "output_filename": "q6_vbvr_lora_seed_230514"
+}
